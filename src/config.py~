@@ -1,0 +1,7 @@
+import configparser
+
+config = configparser.ConfigParser()
+config.read('config.ini')
+
+
+groq_api_key = config.get('GROQ', 'groq_api_key')
